@@ -1,3 +1,6 @@
+DB LINK:
+http://localhost:8080/h2-console
+
 Greeting Controller:
 ====================
 curl http://localhost:8080/v1/greetings/jacob
@@ -31,15 +34,9 @@ Instructor Controller: |
 =======================
 CREATE INSTRUCTOR:
 ==================
-curl -i \
--d '{"id":null, "name":"jacob"}' \
--H "Content-Type: application/json" \
--X POST http://localhost:8080/v1/instructors
+curl -d "{\"id\":null, \"name\":\"jacob\"}" -H "Content-Type: application/json" -X POST http://localhost:8080/v1/instructors
 
 
 CREATE COURSE WITH INSTRUCTOR:
 ==================
-curl -i \
--d '{"id":null, "name":"Build Restful APIs using Kotlin and SpringBoot", "category": "Development", "instructorId": 1}' \
--H "Content-Type: application/json" \
--X POST http://localhost:8080/v1/courses
+curl -d "{\"id\":null, \"name\":\"Build Restful APIs using Kotlin and SpringBoot\", \"category\": \"Development\", \"instructorId\": 1}" -H "Content-Type: application/json" -X POST http://localhost:8080/v1/courses
