@@ -27,8 +27,8 @@ dependencies {
 	implementation("org.jetbrains.kotlin:kotlin-reflect")
 	//logging
 	implementation("io.github.microutils:kotlin-logging-jvm:2.0.11")
-	runtimeOnly("com.h2database:h2")
-	//runtimeOnly("org.postgresql:postgresql")
+	//runtimeOnly("com.h2database:h2")
+	runtimeOnly("org.postgresql:postgresql")
 	testImplementation("org.springframework.boot:spring-boot-starter-test")
 	testImplementation("org.springframework.boot:spring-boot-starter-webflux")
 	testImplementation("io.mockk:mockk:1.10.4")

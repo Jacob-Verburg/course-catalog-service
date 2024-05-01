@@ -1,5 +1,8 @@
 DB LINK:
-http://localhost:8080/h2-console
+in memory db: http://localhost:8080/h2-console
+
+for postgres db:
+docker-compose up
 
 Greeting Controller:
 ====================
